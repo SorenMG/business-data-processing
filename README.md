@@ -3,25 +3,18 @@
 Revenue Patterns Across Time and Space in NYC Yellow Taxi Data
 **Business Data Processing & Business Intelligence — Exam Project**
 
-## Overview
-
-This repository contains an end-to-end BI/analytics pipeline that answers:
-
-* **When should a NYC yellow taxi driver work to maximize revenue?**
-* **Where should they work to maximize revenue?**
-
 The project builds an ETL pipeline in **Python**, stores curated data in **PostgreSQL**, and prepares exports for **Tableau** dashboards.
 
 ## Tech Stack
 
-* **Python** (pandas, SQLAlchemy, pyarrow)
-* **PostgreSQL** (analytical schema + SQL views)
+* **Python** (pandas, SQLAlchemy)
+* **PostgreSQL** (analytical schema)
 * **Tableau Desktop** (visual analytics)
 
-## Data Sources (public)
+## Data Sources
 
 * **NYC TLC Yellow Taxi Trip Records** (monthly Parquet files)
-* **Taxi Zone Lookup** (CSV mapping `LocationID` → zone/borough metadata)
+* **Taxi Zone Lookup** (zone/borough metadata)
 
 This project uses the Jan–Mar 2023.
 
