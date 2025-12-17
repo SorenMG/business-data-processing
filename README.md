@@ -10,7 +10,7 @@ This repository contains an end-to-end BI/analytics pipeline that answers:
 * **When should a NYC yellow taxi driver work to maximize revenue?**
 * **Where should they work to maximize revenue?**
 
-The project builds an ETL pipeline in **Python**, stores curated data in **PostgreSQL** (star schema + views), and prepares exports for **Tableau** dashboards.
+The project builds an ETL pipeline in **Python**, stores curated data in **PostgreSQL**, and prepares exports for **Tableau** dashboards.
 
 ## Tech Stack
 
@@ -23,7 +23,7 @@ The project builds an ETL pipeline in **Python**, stores curated data in **Postg
 * **NYC TLC Yellow Taxi Trip Records** (monthly Parquet files)
 * **Taxi Zone Lookup** (CSV mapping `LocationID` → zone/borough metadata)
 
-This project uses a **Jan–Mar 2023** sample to keep processing manageable while preserving meaningful patterns.
+This project uses the Jan–Mar 2023.
 
 ---
 
@@ -46,12 +46,10 @@ Create an empty database, e.g.:
 CREATE DATABASE nyc_taxi;
 ```
 
-### 3) Configure DB connection
-
-Set your connection string in your Python pipeline script (SQLAlchemy), for example:
+### 3) Run pipeline
 
 ```
-postgresql+psycopg2://user:password@localhost:5432/nyc_taxi
+python3 pipeline.py
 ```
 
 ---
