@@ -1,7 +1,7 @@
 # When Should Taxi Drivers Work?
 
 Revenue Patterns Across Time and Space in NYC Yellow Taxi Data
-**Business Data Processing & Business Intelligence — Exam Project**
+**Business Data Processing & Business Intelligence**
 
 The project builds an ETL pipeline in **Python**, stores curated data in **PostgreSQL**, and prepares exports for **Tableau** dashboards.
 
@@ -12,6 +12,8 @@ The project builds an ETL pipeline in **Python**, stores curated data in **Postg
 * **Tableau Desktop** (visual analytics)
 
 ## Data Sources
+
+The data is gathered from the TLC New York data set: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 * **NYC TLC Yellow Taxi Trip Records** (monthly Parquet files)
 * **Taxi Zone Lookup** (zone/borough metadata)
